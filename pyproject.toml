@@ -1,12 +1,18 @@
 [tool.poetry]
-name = "template"
+name = "ml_glass"
 version = "0.1.0"
-description = "Use this config file as template for your project."
-authors = ["Your Name <you@example.com>"]
+description = "Project for ML applied to glass discovery"
+authors = []
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.12"
+pandas = "^2.2.3"
+numpy = "^2.2.3"
+quantile-forest = "^1.4.0"
+matplotlib = "^3.10.1"
+scikit-learn = "^1.6.1"
+plotly = "^6.0.0"
 
 [tool.black]
 line-length = 120
