@@ -2,6 +2,7 @@
 
 /data
 /personal
+/viz
 
 # Python stuff
 *.ipynb_checkpoints/
