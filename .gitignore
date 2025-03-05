@@ -1,13 +1,7 @@
 # Folders that Git should ignore
 
-/bin
-/cache
 /data
-/docs
-/models
-/out
 /personal
-/visualization
 
 # Python stuff
 *.ipynb_checkpoints/
