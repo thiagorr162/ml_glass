@@ -1,0 +1,4 @@
+vidro_teste_comp,y_teste,vidro_similar_comp,y_similar,similaridade_breiman
+"Li2O: 25.00, B2O3: 30.00, Bi2O3: 45.00",3.27,"Li2O: 25.00, B2O3: 25.00, Bi2O3: 50.00",3.41,0.612
+"Li2O: 25.00, B2O3: 30.00, Bi2O3: 45.00",3.27,"Li2O: 25.00, B2O3: 35.00, Bi2O3: 40.00",3.24,0.562
+"Li2O: 25.00, B2O3: 30.00, Bi2O3: 45.00",3.27,"Li2O: 25.00, B2O3: 40.00, Bi2O3: 35.00",3.15,0.190

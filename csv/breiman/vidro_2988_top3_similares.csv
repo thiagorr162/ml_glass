@@ -1,0 +1,4 @@
+vidro_teste_comp,y_teste,vidro_similar_comp,y_similar,similaridade_breiman
+"B2O3: 43.70, GeO2: 15.00, P2O5: 8.00, PbO: 33.30",4.0,"B2O3: 46.70, GeO2: 15.00, P2O5: 5.00, PbO: 33.30",4.0,0.900
+"B2O3: 43.70, GeO2: 15.00, P2O5: 8.00, PbO: 33.30",4.0,"B2O3: 49.70, GeO2: 15.00, P2O5: 2.00, PbO: 33.30",4.0,0.790
+"B2O3: 43.70, GeO2: 15.00, P2O5: 8.00, PbO: 33.30",4.0,"B2O3: 18.00, GeO2: 30.00, P2O5: 2.00, PbO: 50.00",4.0,0.750

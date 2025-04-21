@@ -1,0 +1,4 @@
+vidro_teste_comp,y_teste,vidro_similar_comp,y_similar,similaridade_breiman
+"PbO: 35.00, Bi2O3: 50.00, CuO: 15.00",4.0,"PbO: 37.50, Bi2O3: 50.00, CuO: 12.50",1.53,0.778
+"PbO: 35.00, Bi2O3: 50.00, CuO: 15.00",4.0,"PbO: 30.00, Bi2O3: 50.00, CuO: 20.00",1.94,0.586
+"PbO: 35.00, Bi2O3: 50.00, CuO: 15.00",4.0,"PbO: 40.00, Bi2O3: 50.00, CuO: 10.00",1.46,0.272

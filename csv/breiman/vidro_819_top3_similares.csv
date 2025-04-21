@@ -1,0 +1,4 @@
+vidro_teste_comp,y_teste,vidro_similar_comp,y_similar,similaridade_breiman
+"K2O: 20.00, Al2O3: 15.00, B2O3: 65.00",4.0,"K2O: 21.98, Al2O3: 12.99, B2O3: 64.95",1.479,0.438
+"K2O: 20.00, Al2O3: 15.00, B2O3: 65.00",4.0,"K2O: 20.00, Al2O3: 10.00, B2O3: 70.00",4.0,0.374
+"K2O: 20.00, Al2O3: 15.00, B2O3: 65.00",4.0,"K2O: 25.00, Al2O3: 10.00, B2O3: 65.00",1.483,0.276

@@ -1,0 +1,4 @@
+vidro_teste_comp,y_teste,vidro_similar_comp,y_similar,similaridade_breiman
+"Na2O: 10.00, CaO: 20.00, B2O3: 5.00, P2O5: 45.00, SrO: 20.00",4.0,"Na2O: 10.00, CaO: 20.00, B2O3: 3.75, P2O5: 46.25, SrO: 20.00",1.547,0.586
+"Na2O: 10.00, CaO: 20.00, B2O3: 5.00, P2O5: 45.00, SrO: 20.00",4.0,"Na2O: 10.00, CaO: 20.00, B2O3: 2.50, P2O5: 47.50, SrO: 20.00",1.545,0.214
+"Na2O: 10.00, CaO: 20.00, B2O3: 5.00, P2O5: 45.00, SrO: 20.00",4.0,"CaO: 55.00, P2O5: 45.00",1.563,0.198
