@@ -1,7 +1,6 @@
 # Folders that Git should ignore
 
 /personal
-/viz
 
 # Python stuff
 *.ipynb_checkpoints/
