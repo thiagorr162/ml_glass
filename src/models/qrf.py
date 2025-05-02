@@ -53,25 +53,28 @@ results_df = pd.DataFrame(
     }
 )
 
-# Ordenando pelos valores reais
+# Ordenando pelos valores reais (opcional — na verdade agora não afeta o gráfico)
 results_df_sorted = results_df.sort_values(by="y_true").reset_index(drop=True)
+
+# Calculando erros (para usar no errorbar)
+y_err_lower = results_df_sorted["y_pred_med"] - results_df_sorted["y_pred_low"]
+y_err_upper = results_df_sorted["y_pred_upp"] - results_df_sorted["y_pred_med"]
 
 # Criando o gráfico
 plt.figure(figsize=(8, 6))
 
-# Faixa de confiança (entre os quantis 0.05 e 0.95)
-plt.fill_between(
+# Gráfico com barras de erro (error bars)
+plt.errorbar(
     results_df_sorted["y_true"],
-    results_df_sorted["y_pred_low"],
-    results_df_sorted["y_pred_upp"],
-    color="gray",
-    alpha=0.3,
-    label="Intervalo 90%",
-)
-
-# Previsão (mediana)
-plt.scatter(
-    results_df_sorted["y_true"], results_df_sorted["y_pred_med"], color="royalblue", s=30, label="Previsão (mediana)"
+    results_df_sorted["y_pred_med"],
+    yerr=[y_err_lower, y_err_upper],
+    fmt="o",
+    color="royalblue",
+    ecolor="gray",
+    elinewidth=1,
+    capsize=4,
+    alpha=0.6,
+    label="Previsão (mediana) com intervalo 90%",
 )
 
 # Reta y = x (previsão ideal)

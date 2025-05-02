@@ -74,21 +74,47 @@ for pred, node in zip(y_test_pred, test_partitions):
 lower_bounds = np.array(lower_bounds)
 upper_bounds = np.array(upper_bounds)
 
-# Gerando figura com intervalos preditivos adaptativos
-plt.figure(figsize=(8, 6))
+# Ordenando para plot (opcional para deixar visual limpo)
 order = np.argsort(y_test)
 y_sorted = y_test[order]
 y_pred_sorted = y_test_pred[order]
 lower_sorted = lower_bounds[order]
 upper_sorted = upper_bounds[order]
 
-plt.plot(y_sorted, y_pred_sorted, "o", color="tab:blue", label="Previsão")
-plt.fill_between(y_sorted, lower_sorted, upper_sorted, color="lightblue", alpha=0.5, label="Intervalo LOCART")
-plt.plot([0, 4], [0, 4], linestyle="--", color="gray", label="$x = y$")
-plt.xlabel("Valor real", fontsize=12)
-plt.ylabel("Valor predito", fontsize=12)
-plt.title("Intervalos adaptativos via LOCART", fontsize=14)
-plt.legend()
+# Erros para as barras (errorbar)
+y_err_lower = y_pred_sorted - lower_sorted
+y_err_upper = upper_sorted - y_pred_sorted
+
+# Criando o gráfico com estilo padronizado
+plt.figure(figsize=(8, 6))
+
+plt.errorbar(
+    y_sorted,
+    y_pred_sorted,
+    yerr=[y_err_lower, y_err_upper],
+    fmt="o",
+    color="royalblue",
+    ecolor="gray",
+    elinewidth=1,
+    capsize=4,
+    alpha=0.6,
+    label="Previsão com intervalo LOCART",
+)
+
+# Reta y = x
+min_val = min(y_sorted.min(), y_pred_sorted.min())
+max_val = max(y_sorted.max(), y_pred_sorted.max())
+plt.plot([min_val, max_val], [min_val, max_val], "k--", label="Previsão ideal (y = x)")
+
+# Eixos e título (iguais aos anteriores)
+plt.xlabel("Valor real (Y)", fontsize=16)
+plt.ylabel("Previsão (mediana)", fontsize=16)
+plt.title("Previsão vs Valor Real com Intervalos Preditivos", fontsize=18)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.legend(fontsize=12)
 plt.tight_layout()
+
+# Salvando o gráfico
 plt.savefig(viz_path / "locart_prediction_intervals.png", dpi=300)
 plt.close()
