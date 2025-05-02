@@ -82,7 +82,7 @@ plt.plot([min_val, max_val], [min_val, max_val], "k--", label="Previsão ideal (
 # Eixos e título
 plt.xlabel("Valor real (Y)", fontsize=16)
 plt.ylabel("Previsão (mediana)", fontsize=16)
-plt.title("Previsão vs Valor Real com Intervalos de Confiança", fontsize=18)
+plt.title("Previsão vs Valor Real com Intervalos Preditivos", fontsize=18)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.legend(fontsize=12)
