@@ -1,0 +1,13 @@
+,value
+raw_rows,15706.0
+clean_rows,15690.0
+rejected_rows,16.0
+unique_compositions,15626.0
+replicate_groups,18.0
+conflicting_groups,11.0
+RI_mean,1.7338934848311027
+RI_median,1.6841949999999999
+RI_minimum,1.14
+RI_maximum,4.12
+zero_fraction,0.9118125214492327
+median_nonzero_oxides,5.0
